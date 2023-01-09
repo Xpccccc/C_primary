@@ -1,0 +1,3 @@
+/Users/xupeng/Documents/C_primary/day_05/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/xupeng/Documents/C_primary/day_05/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/xupeng/Documents/C_primary/day_05/cmake-build-debug/CMakeFiles/day_05.dir
