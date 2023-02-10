@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    //    在屏幕上输出9*9乘法口诀表
+    //    实现一个函数，打印乘法口诀表，口诀表的行数和列数自己指定
     int input = 0;
     scanf("%d",&input);
     for (int i = 1; i <= input; i++) {
