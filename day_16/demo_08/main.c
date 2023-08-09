@@ -1,20 +1,29 @@
 #include <stdio.h>
 
 void bubble_sort(int arr[], int sz) {
-    for (int i = 0; i < sz - 1; ++i) {
-        int flag = 1;//标志位
-        for (int j = i; j < sz - 1; ++j) {//继续从下一个位置开始
-            if (arr[j] > arr[j + 1]) {
-                flag = 0;//说明有交换
-                int temp = arr[j];
-                arr[j] = arr[j + 1];
-                arr[j + 1] = temp;
-            }
-        }
-        //如果有一躺没有交换，则直接结束排序（已经排序好）
-        if (1 == flag)
-            break;
-    }
+    //确定冒泡函数趟数
+ 	int i = 0;
+ 	for (i = 0;i < sz-1;i++)
+ 	{
+ 		//每一趟冒泡排序
+ 		int j = 0;
+ 		//假设这一趟要排序的数据已经有序
+ 		int flag = 1;
+ 		for (j = 0;j < sz - 1 - i;j++)
+ 		{
+ 			if (arr[j] > arr[j + 1])
+ 			{
+ 				int tmp = arr[j];
+ 				arr[j ] = arr[j+1];
+ 				arr[j+1] = tmp;
+ 				flag = 0;      //这一趟的数据不是有序
+ 			}
+ 		}
+ 		if (1 == flag)
+ 		{
+ 			break;
+ 		}
+ 	}
 }
 int main() {
     //实现一个对整形数组的冒泡排序
